@@ -6,11 +6,7 @@ class CfgPatches
 		requiredVersion=1.1;
 		requiredAddons[]=
 		{
-			"DZ_Data",
-			"DZ_Gear_Containers",
-			"DZ_characters",
-			"DZ_Scripts",
-			"DZ_Characters_Backpacks"
+			"DZ_Data"
 		};
 	};
 };
@@ -24,38 +20,16 @@ class CfgMods
 		hideName=0;
 		hidePicture=1;
 		name="CaseModdedTexture";
-		author="Griffin";
+		author="";
 		authorID="";
 		version="1.0";
 		extra=0;
 		type="mod";
-		dependencies[]=
-		{
-			"World"
-		};
-		class defs
-		{
-			class worldScriptModule
-			{
-				value="";
-				files[]=
-				{
-					"CaseModdedTexture/scripts/4_World"
-				};
-			};
-			class imageSets
-			{
-				files[]={};
-			};
-		};
 	};
 };
 
 class CfgVehicles
 {
-	class Inventory_Base;
-	class Clothing;
-	class SmallProtectorCase;
 	class Container_Base;
 	class Green_Case: Container_Base
 	{
